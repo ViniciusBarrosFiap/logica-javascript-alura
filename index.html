@@ -13,24 +13,22 @@
         //função sem parâmetro
         function pularLinha() {
             document.write("<br>");
-        }
+        };
 
         //função com parâmentro
         function mostra(idades) {
             document.write(idades);
             pularLinha();
-        }
+        };
+        //função com 2 parâmetros
+        function calculaImc(peso, altura) {
+            var imc = peso / (altura * altura);
+            mostra(`O imc calculado é ${imc}`);
+        };
 
-        var ano = 2023;
+        calculaImc(61, 1.76);
+        calculaImc(65, 1.65);
 
-        //document.write("Flávio tem" + (ano - 1995) + " anos");
-        mostra("Flávio tem" + (ano - 1995) + " anos");
-        //pularLinha();
-        //document.write("Vinicius tem " + (ano - 2004) + " anos");
-        mostra("Vinicius tem " + (ano - 2004) + " anos");
-        //pularLinha();
-        //document.write("Claudia tem " + (ano - 1971) + " anos");
-        mostra("Claudia tem " + (ano - 1971) + " anos");
     </script>
 </body>
 
