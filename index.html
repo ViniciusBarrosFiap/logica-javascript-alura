@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica</title>
+</head>
+
+<body>
+    <script>
+        //função sem parâmetro
+        function pularLinha() {
+            document.write("<br>");
+        }
+
+        //função com parâmentro
+        function mostra(idades) {
+            document.write(idades);
+            pularLinha();
+        }
+
+        var ano = 2023;
+
+        //document.write("Flávio tem" + (ano - 1995) + " anos");
+        mostra("Flávio tem" + (ano - 1995) + " anos");
+        //pularLinha();
+        //document.write("Vinicius tem " + (ano - 2004) + " anos");
+        mostra("Vinicius tem " + (ano - 2004) + " anos");
+        //pularLinha();
+        //document.write("Claudia tem " + (ano - 1971) + " anos");
+        mostra("Claudia tem " + (ano - 1971) + " anos");
+    </script>
+</body>
+
+</html>
