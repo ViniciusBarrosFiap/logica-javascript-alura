@@ -26,3 +26,15 @@ var imc = calculaImc(pesoUser, alturaUser);
 mostra(`A altura informada é: ${alturaUser}m`)
 mostra(`O peso informado é: ${pesoUser}kg`)
 mostra(`${nome}, o seu imc é: ${imc}`)
+
+if (imc < 18.5) {
+    mostra("Você está abaixo do recomendado")
+}
+
+if (imc > 35) {
+    mostra("Você está acima do recomendado")
+}
+
+if (imc >= 18.5 && imc <= 35) {
+    mostra("Seu imc está ok")
+}
